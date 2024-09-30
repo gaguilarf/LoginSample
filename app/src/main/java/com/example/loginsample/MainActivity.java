@@ -2,6 +2,7 @@ package com.example.loginsample;
 
 import static android.content.ContentValues.TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -31,8 +32,9 @@ public class MainActivity extends AppCompatActivity {
         EditText editUsername = binding.editUsername;
         EditText editPassword = binding.editPassword;
         Button btnLogin = binding.btnLogin;
+        Button btnCrearCuenta = binding.btnCrearCuenta;
 
-        btnLogin.setOnClickListener(view1 -> {
+        btnLogin.setOnClickListener(v -> {
             if(editUsername.getText().toString().equals("admin") && editPassword.getText().toString().equals("admin")){
                 Toast.makeText(getApplicationContext(), "Bienvenido a mi app",Toast.LENGTH_SHORT).show();
                 Log.d(TAG, "Bienvenido a mi app");
@@ -40,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Error en la autenticacion",Toast.LENGTH_SHORT).show();
                 Log.d(TAG, "Error en la autenticacion");
             }
+        });
+
+        btnCrearCuenta.setOnClickListener(v -> {
+            Intent intent = new Intent(getApplicationContext(), AccountActivity.class);
+            startActivity(intent);
         });
 
     }

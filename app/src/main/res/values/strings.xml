@@ -4,4 +4,14 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="phone">Phone</string>
+    <string name="username2">Username</string>
+    <string name="password2">Password</string>
+    <string name="registrar">Registrar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ingrese_sus_datos">Ingrese sus datos</string>
 </resources>
